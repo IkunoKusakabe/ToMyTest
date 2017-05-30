@@ -1,0 +1,17 @@
+<apex:page showHeader="false">
+<title>アンケート完了</title>
+
+<div id="header">
+</div>
+
+<div id="msg">
+アンケートのご回答有難うございました。<br/>
+</div>
+
+<div id="submit">
+<input type="button" value="　閉じる　" onClick="window.close()"/>
+</div>
+
+<hr size="1"/>
+
+</apex:page>
