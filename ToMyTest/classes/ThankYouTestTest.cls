@@ -1,7 +1,7 @@
 @isTest
 public class ThankyouTestTest{
 
-    static testMethod void coverageTest(){
+    testMethod void coverageTest(){
     	ThankYouTest th = new ThankyouTest();
     	
     	System.assertEquals(false, th.exec(12));

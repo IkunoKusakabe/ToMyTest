@@ -1,8 +1,8 @@
-public class ThankyouTest{
+public class ThankYouTest{
 
     public static final Integer iiinnt = 15 ;
 
-    public static boolean exec(Integer arg){
+    public boolean exec(Integer arg){
     
         if (arg == iiinnt) {
             return true;
