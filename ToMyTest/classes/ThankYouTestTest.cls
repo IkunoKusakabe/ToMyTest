@@ -2,7 +2,7 @@
 public class ThankyouTestTest{
 
     @isTest
-    static testMethod void coverageTest(){
+    static void coverageTest(){
     	ThankYouTest th = new ThankyouTest();
     	
     	System.assertEquals(false, th.exec(12));
