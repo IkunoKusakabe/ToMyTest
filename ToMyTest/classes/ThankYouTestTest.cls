@@ -1,5 +1,5 @@
 @isTest
-public class ThankyouTestTest{
+public class ThankYouTestTest{
 
     @isTest
     static void coverageTest(){
