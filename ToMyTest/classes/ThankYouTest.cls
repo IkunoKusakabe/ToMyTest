@@ -9,6 +9,7 @@ public class ThankYouTest{
         } else {
         	return false;
         	System.debug('‚±‚¿‚ç‚Í‹£‡2')
+        	System.debug('‚±‚¿‚ç‚Í‹£‡2')
         }
     }
 
