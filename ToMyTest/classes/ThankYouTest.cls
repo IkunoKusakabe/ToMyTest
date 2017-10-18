@@ -8,6 +8,7 @@ public class ThankYouTest{
             return true;
         } else {
         	return false;
+        	System.debug('‚±‚¿‚ç‚Í‹£‡1');
         }
     }
 
