@@ -3,6 +3,7 @@
 
 <div id="msg">
 マージできる<br/>
+追加のみ：マージできる？<br/>
 </div>
 
 </apex:page>
