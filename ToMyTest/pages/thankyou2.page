@@ -1,8 +1,0 @@
-<apex:page showHeader="false">
-<title>アンケート完了</title>
-
-<div id="msg">
-この度は、アンケートにご協力頂き誠に有難う御座いました。<br/>
-</div>
-
-</apex:page>
