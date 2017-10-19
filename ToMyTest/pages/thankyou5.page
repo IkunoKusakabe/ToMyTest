@@ -1,0 +1,8 @@
+<apex:page showHeader="false">
+<title>アンケート完了</title>
+
+<div id="msg">
+マージできる<br/>
+</div>
+
+</apex:page>
