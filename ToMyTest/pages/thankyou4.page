@@ -2,8 +2,12 @@
 <title>アンケート完了</title>
 
 <div id="msg">
+<<<<<<< HEAD
 この度は、アンケートにご協力頂き誠に有難う御座いました。<br/>
 競合箇所<br/>
+=======
+
+>>>>>>> a5dcfb23bcbeff3aedeb741cbdd88eb7ed805b3c
 </div>
 
 </apex:page>
