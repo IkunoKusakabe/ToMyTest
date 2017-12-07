@@ -2,10 +2,7 @@
 <title>アンケート完了</title>
 
 <div id="msg">
-わからん
-全然分からん
-TEST-001の追記
-TEST-002の追記
+TEST-002で作成
 </div>
 
 </apex:page>
