@@ -1,9 +1,9 @@
 @isTest
-public class ClassTest{
+public class ClassATest{
 
 	@isTest
 	static void test1(){
-		Class c = new Class();
+		ClassA c = new ClassA();
 		c.execute();
 	}
 
