@@ -1,9 +1,9 @@
 @isTest
-private class ClassATest{
+private class ClassBTest{
 
 	@isTest
 	public static void test1(){
-		ClassA c = new ClassA();
+		ClassB c = new ClassB();
 		System.assertEquals(123, c.execute());
 	}
 
