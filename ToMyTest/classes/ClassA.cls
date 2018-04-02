@@ -1,8 +1,8 @@
 public class ClassA{
 
 	public Integer execute() {
-		Integer i = 123;
-		return i;
+		Integer i2 = 123;
+		return i2;
 	}
 
 }
