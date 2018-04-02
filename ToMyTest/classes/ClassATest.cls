@@ -1,10 +1,10 @@
 @isTest
-public class ClassATest{
+private class ClassATest{
 
 	@isTest
-	static void test1(){
+	public static void test1(){
 		ClassA c = new ClassA();
-		System.assertEquals('test', c.execute());
+		System.assertEquals(123, c.execute());
 	}
 
 }

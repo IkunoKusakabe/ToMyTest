@@ -1,8 +1,8 @@
 public class ClassA{
 
-	public String execute() {
-		public String str = 'test';
-		return str;
+	public Integer execute() {
+		Integr int = 123;
+		return int;
 	}
 
 }
