@@ -1,6 +1,6 @@
 public class Class{
 
-	puplic void execute() {
+	public void execute() {
 		Contact con = new Contact();
 	}
 
