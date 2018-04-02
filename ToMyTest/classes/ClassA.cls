@@ -1,6 +1,8 @@
 public class ClassA{
 
-	public void execute() {
+	public String execute() {
+		public String str = 'test';
+		return str;
 	}
 
 }
