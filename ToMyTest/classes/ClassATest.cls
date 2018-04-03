@@ -13,10 +13,4 @@ private class ClassATest{
 		System.assertEquals(456, c.execute2());
 	}
 
-	@isTest
-	public static void test3(){
-		ClassA c = new ClassA();
-		System.assertEquals(789, c.execute3());
-	}
-
 }

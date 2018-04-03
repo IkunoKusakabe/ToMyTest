@@ -10,9 +10,4 @@ public class ClassA{
 		return i2;
 	}
 
-	public Integer execute3() {
-		Integer i3 = 789;
-		return i3;
-	}
-
 }
