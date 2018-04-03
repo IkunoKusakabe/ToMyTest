@@ -5,4 +5,9 @@ public class ClassA{
 		return i;
 	}
 
+	public Integer execute3() {
+		Integer i3 = 789;
+		return i3;
+	}
+
 }

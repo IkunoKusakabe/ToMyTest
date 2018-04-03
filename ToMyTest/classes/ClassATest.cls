@@ -7,4 +7,10 @@ private class ClassATest{
 		System.assertEquals(123, c.execute());
 	}
 
+	@isTest
+	public static void test3(){
+		ClassA c = new ClassA();
+		System.assertEquals(789, c.execute3());
+	}
+
 }
