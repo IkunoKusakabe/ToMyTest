@@ -7,9 +7,4 @@ private class ClassATest{
 		System.assertEquals(123, c.execute());
 	}
 
-	@isTest
-	public static void test2(){
-		ClassA c = new ClassA();
-		System.assertEquals(456, c.execute2());
-	}
 }
