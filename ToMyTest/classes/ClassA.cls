@@ -1,4 +1,4 @@
-public class ClassB{
+public class ClassA{
 
 	public Integer execute() {
 		Integer i2 = 123;
