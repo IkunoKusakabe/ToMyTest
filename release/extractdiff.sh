@@ -44,7 +44,7 @@ echo "[TESTLIST]" >>${PYCONF}
 for test in `seq $3 $#`
 do
 	COUNT=`expr ${COUNT} + 1`
-    echo "test"${COUNT}" = "${test} >>${PYCONF}
+    echo "test"${COUNT}" = "$3 >>${PYCONF}
     # 引数を1つずつずらす
     shift
 done
@@ -141,7 +141,7 @@ echo "[PACKAGELIST]" >>${PYCONF}
 for meta in ${PACKAGES}
 do
 	COUNT=`expr ${COUNT} + 1`
-    echo "test"${COUNT}" = "${meta} >>${PYCONF}
+    echo "package"${COUNT}" = "${meta} >>${PYCONF}
 done
 
 # テストセクションを設定ファイルに出力
