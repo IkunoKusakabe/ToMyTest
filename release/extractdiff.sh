@@ -33,8 +33,8 @@ Workflow
 
 # 引数チェック
 if test $# -ne 3; then
-  echo "指定された引数は$#個です。"
-  echo "実行するには3個の引数が必要です。"
+  echo "ARGUMENT IS LACK."
+  echo "PLEASE INPUT $# ARGUMENTS."
   exit 1
 fi
 
