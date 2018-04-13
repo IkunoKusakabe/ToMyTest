@@ -32,9 +32,9 @@ Workflow
 "
 
 # 引数チェック
-if test $# -ne 3; then
+if test $# -le 3; then
   echo "ARGUMENT IS LACK."
-  echo "PLEASE INPUT $# ARGUMENTS."
+  echo "PLEASE INPUT MORE THAN $# ARGUMENTS."
   exit 1
 fi
 
