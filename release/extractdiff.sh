@@ -41,7 +41,7 @@ fi
 # テストセクションを設定ファイルに出力
 COUNT=0
 echo "[TESTLIST]" >>${PYCONF}
-for test in `seq 3 $#`
+for test in `seq $3 $#`
 do
 	COUNT=`expr ${COUNT} + 1`
     echo "test"${COUNT}" = "${test} >>${PYCONF}
