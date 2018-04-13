@@ -132,7 +132,7 @@ done
 	echo "members = *"
 	echo "version = 29.0"
 	echo "xmlns = http://soap.sforce.com/2006/04/metadata"
-} >>${PYCONF}i
+} >>${PYCONF}
 
 
 # packageセクションを設定ファイルに出力
