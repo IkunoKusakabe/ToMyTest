@@ -38,17 +38,6 @@ if test $# -le 3; then
   exit 1
 fi
 
-# テストセクションを設定ファイルに出力
-COUNT=0
-echo "[TESTLIST]" >>${PYCONF}
-for i in `seq 3 $#`
-do
-	COUNT=`expr ${COUNT} + 1`
-    echo "test"${COUNT}" = "$3 >>${PYCONF}
-    # 引数を1つずつずらす
-    shift
-done
-
 # developをチェックアウト
 git checkout -b ${DEV} origin/${DEV}
 git checkout -t origin/${BRANCH_NAME}
@@ -134,6 +123,16 @@ done
 	echo "xmlns = http://soap.sforce.com/2006/04/metadata"
 } >>${PYCONF}
 
+# テストセクションを設定ファイルに出力
+COUNT=0
+echo "[TESTLIST]" >>${PYCONF}
+for testclass in `seq 3 $#`
+do
+	COUNT=`expr ${COUNT} + 1`
+    echo "test"${COUNT}" = "$3 >>${PYCONF}
+    # 引数を1つずつずらす
+    shift
+done
 
 # packageセクションを設定ファイルに出力
 COUNT=0
