@@ -40,15 +40,23 @@ fi
 
 # developをチェックアウト
 git checkout -b ${DEV} origin/${DEV}
-git checkout -t origin/${BRANCH_NAME}
-# コンフリクト確認したかったけど、↓だとリネームによるdelete？に対応できないっぽい
-#git format-patch origin/${DEV} --stdout>test.patch
-#git checkout ${DEV}
-#git apply test.patch --check
-#git checkout ${BRANCH_NAME}
+# developのマージコミットを取得
+DEV_MERGES=`git log --merges --pretty=format:"%H"`
 
-# 切り分けた時点の最新のマージコミットを取得
-LATEST_MERGE=`git log --merges -1 --pretty=format:"%H"`
+# 開発ブランチをチェックアウト
+git checkout -t origin/${BRANCH_NAME}
+
+# 開発ブランチのマージコミットを順にdevelopと照合し、最初に合致したものを保持
+for MERGE in `git log --merges --pretty=format:"%H"`
+do
+	for DEV_MERGE in ${DEV_MERGES}
+	do
+		if test "${MERGE}" = "${DEV_MERGE}";then
+			LATEST_MERGE=${MERGE}
+			break 2
+	done
+done
+
 
 # developと、入力されたブランチの差分を取得して書き出し
 # 0を返す「：」でファイルを初期化
